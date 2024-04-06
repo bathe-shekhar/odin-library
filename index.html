@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+    <link rel="stylesheet" href="./sytle.css">
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Odin-Library</h1>
+    </div>
+    <div class="container">
+        <div class="library-status">
+            <div class="read-indication">
+
+                <div class="green"></div>
+                <div> : Read </div>
+
+                <div class="red"></div>
+                <div>: Not Read </div>
+            </div>
+            <div class="library-count" id="library-count">
+
+            </div>
+        </div>
+
+
+        <div class="library">
+            <!-- <div class="book">
+                <div class="book-name">Those 70 days</div>
+                <div class="book-author">- by - <br> lara mountbatten</div>
+                <div class="book-pages">323 pages</div>
+                <div class="book-control">
+                    <div class="read-status">
+                        <input type="checkbox" name="read" checked id="read">
+                        <label for="read">Read</label>
+                    </div>
+                    <button id="remove">remove</button>
+                </div>
+            </div> -->
+
+
+            <button id="add-book" class="add-book">+</button>
+        </div>
+    </div>
+
+
+    <dialog id="dialog">
+        <form method="dialog" id="book-form">
+            <h3>Add Book</h3>
+            <div class="input-block">
+                <label for="book-name">Book Title</label>
+                <input type="text" id="book-name" name="book-name" placeholder="book Name">
+            </div>
+            <div class="input-block">
+                <label for="book-Author">Book Author</label>
+                <input type="text" id="book-author" name="book-author" placeholder="book Author">
+            </div>
+            <div class="input-block">
+                <label for="book-pages">Book Pages</label>
+                <input type="number" id="book-pages" name="book-pages" placeholder="book pages">
+            </div>
+            <div class="input-block checkBoxInput">
+                <label for="book-read">Reading Completed</label>
+                <input type="checkbox" checked id="book-read" name="book-read">
+            </div>
+            <div class="input-block">
+                <button type="submit" id="add-button" autofocus>Add</button>
+                <button type="button" id="close-button" autofocus>Close</button>
+            </div>
+
+        </form>
+        <!-- <button autofocus>Close</button> -->
+        <!-- <p>This modal dialog has a groovy backdrop!</p> -->
+    </dialog>
+</body>
+
+</html>
